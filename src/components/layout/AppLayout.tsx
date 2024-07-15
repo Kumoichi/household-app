@@ -15,6 +15,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+//ReactRouterライブラリからOutletコンポーネントをとってきている
 import { Outlet } from 'react-router-dom';
 
 const drawerWidth = 240;
@@ -145,6 +146,7 @@ export default function ResponsiveDrawer(props: Props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
+        {/* ここにoutletコンポーネントを使っている */}
         <Outlet />
       </Box>
     </Box>
